@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo02</title>
+</head>
+<body>
+    <h1>Desarrollo 02</h1>
+<p> <a href="index.html">Regresar al principal</a> </p>
+<script>
+    /* Una universidad ha decidido otorgar a sus profesores
+    una bonificación por fiestas navideñas. La bonificación a otorgar 
+    será igual a la suma de una bonificación por condición laboral y
+    una bonificación por número de hijos */
+    let bonoh,extra,hijos;
+    hijos=prompt("Ingrese la cantidad de hijos que tiene: ")
+    if (hijos <= 3) {
+        bonoh = 25*hijos
+    }
+    if (hijos > 3 ) {
+        extra = hijos - 3
+        bonoh = extra*10 + 3*25
+    }
+    if (hijos <= 0){
+        throw alert("Digite un valor valido por favor")
+    }
+    //condicion laboral
+</script>
+<h2>ELIJA SU SUELDO BRUTO</h2>
+<select name="categoria" id="categoria">
+    <option value=2350>S/. 2350</option>
+    <option value=2000>S/. 2000</option>
+    <option value=1850>S/. 1850</option>
+    <option value=1500>S/. 1500</option>
+    <button type="submit" id="categoria" name="categoria">Enviar</button>
+</select>
+<h2>ELIJA SU CONDICION LABORAL</h2>
+    <select name="condicion" id="condicion">
+        <option value=0.10>Profesores Contratados</option>
+        <option value=0.15>Profesores Nombrados</option>
+        <button type="submit" id="condicion" name="condicion">Enviar</button>
+    </select>
+    <br><br><button type="submit" onclick="calcular()">Calcular</button>
+<h2 id="bonus">CALCULO DE BONIFICACIONES</h2>
+    <br><input type="number" name="calcular" id="calcular" readonly="true">
+</body>
+</html>

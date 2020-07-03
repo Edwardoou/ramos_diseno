@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo 01</title>
+</head>
+<body>
+    <h1>Desarrollo 01</h1>
+<p> <a href="index.html">Regresar al principal</a> </p>
+<script>
+    /* Diseñe un algoritmo que determine la categoría de un estudiante en base
+    a su promedio ponderado */
+    let prom=0;
+    prom = prompt("Digite su promedio ponderado del 1 al 20: ");
+    //operaciones
+    if (prom > 20 || prom < 0){
+        throw alert("Digite un valor valido de l al 20 por favor")
+    }
+    if ( prom >= 17 ) {
+        alert("Usted se encuentra en la categoria A");
+    }
+    if (prom >=14 && prom<17 ){
+        alert("Usted se encuentra en la categoria B");
+    }
+    if (prom >=12 && prom<14) {
+        alert("Usted se encuentra en la categoria C");
+    }
+    if (prom <12) {
+        alert("Usted se encuentra en la categoria D");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo03</title>
+</head>
+<body>
+    <h1>Desarrollo 03</h1>
+<p> <a href="index.html">Regresar al principal</a> </p>
+<script>
+    /* 3.	Una empresa ha decidido otorgar a sus vendedores una bonificación 
+    de S/. 50 por cada hijo en edad escolar. El sueldo bruto se calcula sumando 
+    un sueldo básico de S/. 600 más una comisión que es igual al 7.5% del 
+    importe total vendido del mes y más la bonificación. Por ley, todo vendedor 
+    está sujeto a un descuento del 11% del sueldo bruto. Dados el importe total 
+    vendido del mes y la cantidad de hijos en edad escolar, diseñe un programa
+    que determine la comisión, la bonificación, el sueldo bruto, el descuento
+    y el sueldo neto de un vendedor. */
+    let bonoh,sueldob,comision,desc,sueldon;
+    hijos=prompt("Digite la cantidad de hijos en edad escolar que posee: ")
+    venta=prompt("Digite su importe total vendido del mes: ")
+    //sueldo bruto
+    bonoh = hijos*50
+    comision = 0.075*venta
+    sueldob = 600 + comision + bonoh
+    //descuento
+    desc = 0.11*sueldob
+    //sueldo neto
+    sueldon = sueldob - desc
+    //salida
+    document.write("<br>Usted percibira una comision de: S/."+comision+" soles")
+    document.write("<br><br>Usted recibira una bonificacion de: S/."+bonoh+" soles")
+    document.write("<br><br>Usted recibira un suelto bruto de: S/."+sueldob+" soles")
+    document.write("<br><br>Usted percibira un descuento de S/."+desc+" soles")
+    document.write("<br><br>Su sueldo neto total es de: S/."+sueldon+" soles")
+</script>
+</body>
+</html>

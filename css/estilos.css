@@ -1,0 +1,15 @@
+h1{
+    text-align: center; color: blue;
+}
+nav{
+    text-align: center; size: 100px; font-size: xx-large;
+}
+footer{
+    text-align: center; color: blue;
+}
+.logo{
+    display: block; margin: auto;
+}
+#gato{
+    height: 500px ; width: 1400px ;
+}
